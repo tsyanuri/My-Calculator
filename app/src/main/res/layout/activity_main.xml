@@ -5,15 +5,20 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@color/backNumber">
 
     <TextView
         android:id="@+id/tvInput"
         android:layout_width="match_parent"
         android:layout_height="250dp"
-        android:background="#efefef"
+        android:background="@color/colorPrimary"
         android:textSize="48sp"
         android:maxLength="12"
+        android:padding="10dp"
+        android:text="@string/_0"
+        android:textColor="@color/colorAccent"
+        android:gravity="right|bottom|center"
         />
     <!--Row 1-->
     <LinearLayout
@@ -21,6 +26,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="2dp"
         android:layout_weight="1"
+        android:background="@color/backNumber"
         android:orientation="horizontal">
         <Button
             android:id="@+id/btnSeven"
@@ -28,6 +34,9 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="7"
+            android:background="@color/backNumber"
+            android:textColor="@color/colorAccent"
+            android:textSize="35sp"
             android:onClick="onDigit"
             />
         <Button
@@ -36,6 +45,9 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="8"
+            android:background="@color/backNumber"
+            android:textColor="@color/colorAccent"
+            android:textSize="35sp"
             android:onClick="onDigit"
             />
         <Button
@@ -44,6 +56,9 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="9"
+            android:background="@color/backNumber"
+            android:textColor="@color/colorAccent"
+            android:textSize="35sp"
             android:onClick="onDigit"
             />
         <Button
@@ -52,6 +67,9 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="÷"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/colorAccent"
+            android:textSize="35sp"
             android:onClick="onOperator"
             />
 
@@ -69,6 +87,9 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="4"
+            android:background="@color/backNumber"
+            android:textColor="@color/colorAccent"
+            android:textSize="35sp"
             android:onClick="onDigit"
             />
         <Button
@@ -77,6 +98,9 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="5"
+            android:background="@color/backNumber"
+            android:textColor="@color/colorAccent"
+            android:textSize="35sp"
             android:onClick="onDigit"
             />
         <Button
@@ -85,6 +109,9 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="6"
+            android:background="@color/backNumber"
+            android:textColor="@color/colorAccent"
+            android:textSize="35sp"
             android:onClick="onDigit"
             />
         <Button
@@ -93,6 +120,9 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="×"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/colorAccent"
+            android:textSize="35sp"
             android:onClick="onOperator"
             />
     </LinearLayout>
@@ -109,6 +139,9 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="1"
+            android:background="@color/backNumber"
+            android:textColor="@color/colorAccent"
+            android:textSize="35sp"
             android:onClick="onDigit"
             />
         <Button
@@ -117,6 +150,9 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="2"
+            android:background="@color/backNumber"
+            android:textColor="@color/colorAccent"
+            android:textSize="35sp"
             android:onClick="onDigit"
             />
         <Button
@@ -125,6 +161,9 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="3"
+            android:background="@color/backNumber"
+            android:textColor="@color/colorAccent"
+            android:textSize="35sp"
             android:onClick="onDigit"
             />
         <Button
@@ -133,6 +172,9 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="-"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/colorAccent"
+            android:textSize="35sp"
             android:onClick="onOperator"
             />
 
@@ -150,6 +192,9 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="."
+            android:background="@color/backNumber"
+            android:textColor="@color/colorAccent"
+            android:textSize="35sp"
             android:onClick="onDecimalPoint"
             />
         <Button
@@ -158,6 +203,9 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="0"
+            android:background="@color/backNumber"
+            android:textColor="@color/colorAccent"
+            android:textSize="35sp"
             android:onClick="onDigit"
             />
         <Button
@@ -166,6 +214,9 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="AC"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/colorAccent"
+            android:textSize="35sp"
             android:onClick="onClear"
             />
         <Button
@@ -174,6 +225,9 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="+"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/colorAccent"
+            android:textSize="35sp"
             android:onClick="onOperator"
             />
 
@@ -189,7 +243,11 @@
             android:id="@+id/btnEqual"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="="/>
+            android:text="="
+            android:background="@color/colorAccent"
+            android:textColor="@color/colorPrimary"
+            android:textSize="35sp"
+            android:onClick="onEqual"/>
     </LinearLayout>
 
 </LinearLayout>
